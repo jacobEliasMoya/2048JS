@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- container element using some sematic tags -->
+    <main class="game-container">
+
+        <!-- game info area will 
+        consist of icon/score/bestscore/menu -->
+        <section class="game-information">
+            <!-- 2048 icon will be located here -->
+            <div class="game-icon">
+                <h1>2048</h1>
+            </div>
+            <div class="score-menu-container">
+                <div class="current-score">
+                    <h1>Score</h1>
+                    <p class="score-text">...</p>
+                </div>
+                <button class="game-menu">MENU</button>
+            </div>
+            <div class="best-score-menu-container">
+                <div class="current-score">
+                    <h1>Best Score</h1>
+                    <p class="best-score-text">...</p>
+                </div>
+                <button class="game-leaderboard">LEADERBOARD</button>
+
+            </div>
+        </section>
+        <!-- small text to describe the overall
+        goal of the game -->
+        <p class="game-description">You need to join the tiles 
+            to get to tile 2048! Can you do it?!
+        </p>
+
+        <!-- actual game board element -->
+        <section class="game-board">
+            <!-- adding in my game pieces
+            separated classes to make for 
+            easier stylings -->
+            <div class="piece one" ></div>
+            <div class="piece two"  ></div>
+            <div class="piece three"  ></div>
+            <div class="piece four"  ></div>
+            <div class="piece five"  ></div>
+            <div class="piece six"  ></div>
+            <div class="piece seven"  ></div>
+            <div class="piece eight"  ></div>
+            <div class="piece nine"  ></div>
+            <div class="piece ten"  ></div>
+            <div class="piece eleven"  ></div>
+            <div class="piece twelve"  ></div>
+            <div class="piece thirteen"  ></div>
+            <div class="piece fourteen"  ></div>
+            <div class="piece fifteen" ></div>
+            <div class="piece sixteen" ></div>
+
+
+        </section>
+        <div class="controller">
+            <div class="r1">
+                <button class="up-button">UP</button>
+            </div>
+            <div class="r2">
+                <button class="left-button">LEFT</button>
+                <button class="right-button">RIGHT</button>
+            </div>
+            <div class="r3">
+                <button class="down-button">DOWN</button>
+            </div>
+        </div>
+
+    </main>   
+    <script src="main.js"></script> 
+</body>
+</html>

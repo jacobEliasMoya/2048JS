@@ -1,0 +1,320 @@
+body {
+  background: grey;
+}
+
+body::-webkit-scrollbar {
+  height: 1rem;
+  width: 1rem;
+  background: silver;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #fc9559;
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: yellow;
+}
+
+.game-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game-container * {
+  border: none;
+}
+
+.game-container * button {
+  cursor: pointer;
+}
+
+.game-container .game-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.game-container .game-information .game-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: .5rem;
+  height: 10rem;
+  width: 10rem;
+  background: #c9c900;
+  color: white;
+  font-size: 2.5rem;
+}
+
+.game-container .game-information .score-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10rem;
+  width: 10rem;
+  color: #797979;
+}
+
+.game-container .game-information .score-menu-container .current-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+  height: 7rem;
+  width: 7rem;
+  background: silver;
+}
+
+.game-container .game-information .score-menu-container .current-score p {
+  color: white;
+}
+
+.game-container .game-information .score-menu-container button {
+  background: #fc9559;
+  width: 70%;
+  height: 15%;
+  border-radius: .25rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.game-container .game-information .score-menu-container button:hover {
+  width: 70.5%;
+  height: 15.5%;
+  background: #ff8139;
+  -webkit-box-shadow: 0 0 .25rem black;
+          box-shadow: 0 0 .25rem black;
+}
+
+.game-container .game-information .best-score-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: .5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 10rem;
+  width: 10rem;
+  color: #797979;
+}
+
+.game-container .game-information .best-score-menu-container .current-score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: .5rem;
+  height: 7rem;
+  width: 7rem;
+  background: silver;
+}
+
+.game-container .game-information .best-score-menu-container .current-score p {
+  color: white;
+}
+
+.game-container .game-information .best-score-menu-container button {
+  background: #fc9559;
+  width: 70%;
+  height: 15%;
+  border-radius: .25rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.game-container .game-information .best-score-menu-container button:hover {
+  width: 70.5%;
+  height: 15.5%;
+  background: #ff8139;
+  -webkit-box-shadow: 0 0 .25rem black;
+          box-shadow: 0 0 .25rem black;
+}
+
+.game-container .game-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+}
+
+.game-container .game-board {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 31rem;
+  width: 31rem;
+  background: slategray;
+  border-radius: .5rem;
+}
+
+.game-container .game-board .piece {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  border-radius: .5rem;
+  height: 6rem;
+  width: 6rem;
+  border: black 1px;
+  -webkit-transition: all ease .25s;
+  transition: all ease .25s;
+  background: silver;
+  font-size: 2rem;
+}
+
+.game-container .game-board .piece:hover {
+  height: 6.5rem;
+  width: 6.5rem;
+  -webkit-box-shadow: 0 0 1rem;
+          box-shadow: 0 0 1rem;
+}
+
+.game-container .controller {
+  height: 8rem;
+  width: 8rem;
+  background-color: white;
+  margin-top: 1rem;
+  right: 1px;
+}
+
+.game-container .controller div {
+  height: 33.3333333333%;
+}
+
+.game-container .controller div button {
+  -webkit-transition: all ease;
+  transition: all ease;
+  height: 100%;
+  width: 100%;
+  background: silver;
+}
+
+.game-container .controller div button:hover {
+  border: 0.25rem solid #adadad;
+}
+
+.game-container .controller .r2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.game-container .controller .r2 button {
+  width: 50%;
+}
+/*# sourceMappingURL=main.css.map */

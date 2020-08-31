@@ -1,0 +1,199 @@
+@mixin flexedUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+body {
+    background: grey;
+    &::-webkit-scrollbar {
+        height: 1rem;
+        width: 1rem;  
+        background: silver;
+        border-bottom-left-radius: .5rem;
+        border-top-left-radius: .5rem;
+
+    }
+    &::-webkit-scrollbar-thumb{
+        background: rgb(252, 149, 89);
+        border-bottom-left-radius: .5rem;
+        border-top-left-radius: .5rem;
+        &:hover{
+
+            background:yellow;
+        }
+
+    }
+}
+.game-container{
+
+    *{
+        border: none;
+        button{
+            cursor: pointer;
+        }
+    }
+
+    @include flexedUp();
+    flex-direction: column;
+    
+
+    .game-information{
+        @include flexedUp();
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+
+        .game-icon{
+            @include flexedUp();
+            border-radius: .5rem;
+            height: 10rem;
+            width: 10rem;
+            background: rgb(201, 201, 0);
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        .score-menu-container{
+            @include flexedUp();
+            justify-content: space-evenly;
+            border-radius: .5rem;
+            flex-direction: column;
+            height: 10rem;
+            width: 10rem;
+            color: rgb(121, 121, 121);
+            .current-score{
+                @include flexedUp();
+                justify-content: space-between;
+                flex-direction: column;
+                border-radius: .5rem;
+                height: 7rem;
+                width: 7rem;
+                background: silver;
+    
+                h1{
+
+                }
+                p{
+                    color: white;
+                }
+            }
+
+            button {
+                background: rgb(252, 149, 89);
+                width: 70%;
+                height: 15%;
+                border-radius: .25rem;
+                transition: all .5s ;
+                &:hover{
+                    width: 70.5%;
+                    height: 15.5%;
+                    background: rgb(255, 129, 57);
+                    box-shadow: 0 0 .25rem black;
+                }
+            }
+        }
+        .best-score-menu-container{
+            @include flexedUp();
+            justify-content: space-evenly;
+            border-radius: .5rem;
+            flex-direction: column;
+            height: 10rem;
+            width: 10rem;
+            color: rgb(121, 121, 121);
+            .current-score{
+                @include flexedUp();
+                justify-content: space-between;
+                flex-direction: column;
+                border-radius: .5rem;
+                height: 7rem;
+                width: 7rem;
+                background: silver;
+                h1{
+
+                }
+                p{
+                    color: white;
+                }
+            }
+
+            button {
+                background: rgb(252, 149, 89);
+                width: 70%;
+                height: 15%;
+                border-radius: .25rem;
+                transition: all .5s ;
+                &:hover{
+                    width: 70.5%;
+                    height: 15.5%;
+                    background: rgb(255, 129, 57);
+                    box-shadow: 0 0 .25rem black;
+                }
+            }
+        }
+    }
+
+    .game-description{
+        @include flexedUp();
+        flex-direction: column;  
+        color: white;
+    }
+
+    .game-board{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+        height: 31rem;
+        width: 31rem;
+        background: slategray;
+        border-radius: .5rem;
+        .piece{
+            @include flexedUp();
+            cursor: pointer;
+            border-radius: .5rem;
+            height: 6rem;
+            width: 6rem;
+            border: black 1px;
+            transition: all ease .25s;
+            background: silver;
+            font-size: 2rem;
+            &:hover{
+                height: 6.5rem;
+                width: 6.5rem;
+                box-shadow: 0 0 1rem;
+            }
+        }
+    }
+
+    .controller {
+        height: 8rem;
+        width: 8rem;
+        background-color: white;
+        margin-top: 1rem;
+        right: 1px;
+        div{
+            height: 33.3333333333%;
+            button{
+                transition: all ease;
+                height: 100%;
+                width: 100%;
+                background: silver;
+                &:hover{
+                    border: .25rem solid rgb(173, 173, 173);
+                    
+                }
+            }
+        }
+
+        .r2{
+            @include flexedUp();
+            button{
+                width: 50%;
+            }
+        }
+
+    }
+
+}
